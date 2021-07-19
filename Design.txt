@@ -1,0 +1,102 @@
+ Green Island is an island that have many elements, like 
+ 
+ --> different type  of creatures
+ --> Small and Big plants
+ --> Water patches and stream
+ --> Creature can move in the island
+ --> Plant can grow
+ 
+ 									THINGS (INTERFACE)
+ 		-----------------------------------------------------------------------------
+ 		|										|									|
+  	  PLANT	(Class)							CREATURE (Class)					 WATER(Class)
+  	   |										|									|
+  	   |					Omnivore        Carnivore     	Harbivore
+  	   | 										|
+  -------------				--------------------------------------------		----------
+  |			  |				|			|		    |		 |		    |		|		  |
+ SmallTree	BigTree		SPARROW		   CAT		  KIWI		RAT	     RABBIT	  STREAM    WATERPATCH
+ 
+ 
+ 
+ =====================================================================
+ As my designing purpose
+ 
+ At the top of the class structure  I have an Interface named--> THINGS
+ Things have the common methods that applied in all classes
+
+ 	-- public String getName();
+	-- public int getSize();
+	-- public int getX_pos();
+	-- public int getY_pos();
+	-- public String toString();
+	-- public char getSymbol();
+	
+ --> I have created a Array list of all Things in the Entry point that can access 
+ 	all creatures, plants and waters.
+ 	
+ The following classes have implemented the Things
+ 1) Creature
+ 2) Plants
+ 3) Water
+ 
+ 1) CREATURE--> is the super class of
+ 				a)  Rabbit
+ 				b)  Cat
+ 				c)  Kiwi
+ 				d)  Sparrow
+ 	
+ 	Below are the common properties that have implemented  for all the creatures			
+ 	protected String name;
+	protected int size;
+	protected int x_pos;
+	protected int y_pos;
+	protected int speed;
+	protected char symbol;
+	
+	2)  PLANT --> is the super class of 
+					a) BigPlant
+					b) SmallTree
+					
+	3) WATER -->   is the super class of
+					a) Stream
+					b) WaterPatch
+					
+   ISLAND class have the array list of plants, creatures and waters
+   
+   --> I have created the island in the Island class
+   
+   --> Later based on the movement of the creatures I have updated the Island
+   
+   
+	Main method --> Entry point
+	
+		-->  The whole program runs in console
+	 	-->  I have used switch cases for all the methods
+	 	--> Main method used for adding all the creatures
+	 	--> Add Plants and Waters
+	 	--> Draw the island
+	 	--> Move the position as per speed and update world
+	 	--> Automatically turn for 10 times
+
+
+   Main Features of the this project is--> 
+   
+     -> Usage of Interface
+     -> Concept of Class and object
+     -> Super and sub class
+     -> Implementation of inheritance
+     -> Application of overloading constructor
+     -> implementation of Thread
+     -> object type casting
+     -> Method overloading
+     -> Encapsulation for variable
+     -> Usage of Access specifier
+     -> Implementation of switch case
+     -> Implementation of exception handling
+    
+
+ 
+   
+   
+	
